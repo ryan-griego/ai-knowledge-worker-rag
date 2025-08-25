@@ -2,7 +2,7 @@
 
 A powerful question-answering agent that uses RAG (Retrieval Augmented Generation) to provide accurate answers based on your custom knowledge base. This application can be tailored for any domain - from company knowledge bases to personal documentation.
 
-## 🚀 Features
+## Features
 
 - **RAG-powered Q&A**: Uses vector embeddings and retrieval to provide accurate, context-aware answers
 - **Custom Knowledge Bases**: Easy to set up with your own documents
@@ -11,16 +11,16 @@ A powerful question-answering agent that uses RAG (Retrieval Augmented Generatio
 - **Flexible Embeddings**: Support for both OpenAI and free HuggingFace embeddings
 - **Markdown Support**: Works with Markdown files for easy content creation
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8 or higher
 - OpenAI API key (for OpenAI embeddings) and internet connection
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone this repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/ryan-griego/ai-knowledge-worker-rag
    cd knowledge-worker-rag
    ```
 
@@ -35,7 +35,7 @@ A powerful question-answering agent that uses RAG (Retrieval Augmented Generatio
    # Edit .env and add your OpenAI API key
    ```
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Option 1: Use the existing knowledge base
 ```bash
@@ -55,7 +55,7 @@ python setup_knowledge_base.py --name "my-company"
 python knowledge_worker.py --knowledge-base knowledge-base-my-company
 ```
 
-## 📚 Creating Your Own Knowledge Base
+## Creating Your Own Knowledge Base
 
 ### Step 1: Generate the Structure
 ```bash
@@ -125,7 +125,7 @@ kw.chat_interface()
 kw.visualize_vectors(dimensions=2)
 ```
 
-## 🌐 Web Interface
+## Web Interface
 
 The application includes a Gradio-based web interface for easy interaction:
 
@@ -135,7 +135,7 @@ python knowledge_worker.py --chat
 
 This launches a web server (usually at http://127.0.0.1:7860) where you can chat with your knowledge base through a user-friendly interface.
 
-## 🔍 How It Works
+## How It Works
 
 1. **Document Loading**: Loads Markdown files from your knowledge base folders
 2. **Text Chunking**: Splits documents into smaller, manageable chunks
@@ -145,7 +145,7 @@ This launches a web server (usually at http://127.0.0.1:7860) where you can chat
 6. **Generation**: Uses an LLM to generate answers based on retrieved context
 7. **Response**: Provides accurate, context-aware answers
 
-## 📊 Vector Visualization
+## Vector Visualization
 
 The application can create 2D and 3D visualizations of your knowledge base embeddings:
 
@@ -155,7 +155,7 @@ python knowledge_worker.py --visualize
 
 This helps you understand how your documents are organized in vector space and identify potential improvements.
 
-## 💡 Customization Ideas
+## Customization Ideas
 
 - **Company Knowledge Base**: Employee handbooks, policies, procedures
 - **Product Documentation**: User manuals, technical specs, FAQs
@@ -164,7 +164,7 @@ This helps you understand how your documents are organized in vector space and i
 - **Customer Support**: FAQ databases, troubleshooting guides
 - **Legal Documents**: Contracts, policies, compliance materials
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 Create a `.env` file with:
@@ -182,7 +182,7 @@ MODEL = "gpt-4o-mini"  # Change to your preferred model
 - **OpenAI**: Higher quality, requires API key, costs money
 - **HuggingFace**: Free, runs locally, good quality
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
